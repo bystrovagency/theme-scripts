@@ -11,7 +11,7 @@ yarn add @shopify/theme-a11y
 and then import the functions you wish to use through ES6 imports:
 
 ```
-import * as a11y from '@shopify/theme-a11y`;
+import * as a11y from '@shopify/theme-a11y';
 ```
 
 If you prefer not to use a package manager, you can download the latest version of Theme A11y and include it in your project manually from the following links:
@@ -22,6 +22,26 @@ If you prefer not to use a package manager, you can download the latest version 
 These files make Theme A11y accessible via the `Shopify.theme.a11y` global variable.
 
 ---
+
+## Browser Support
+
+Theme A11y uses a method not available in legacy browsers: `Element.matches()`. If you wish to support legacy browsers, make sure you add the following dependencies to your project:
+
+```
+yarn add element-matches
+```
+
+and then import them before you import Theme A11y:
+
+```js
+// Only need to import these once
+import 'element-matches';
+
+// Import @shopify/theme-a11y anywhere you need it
+import * as a11y from '@shopify/theme-a11y';
+```
+
+## Methods
 
 ### accessibleLinks(elements, options)
 
