@@ -1,6 +1,6 @@
 {
   "name": "@shopify/theme-product-form",
-  "version": "3.0.0",
+  "version": "4.0.1",
   "description": "Theme Product Form helps theme developers create and manage the state of their product forms.",
   "main": "dist/theme-product-form.cjs.js",
   "module": "theme-product-form.js",
@@ -27,7 +27,7 @@
     "size": "size-limit"
   },
   "peerDependencies": {
-    "@shopify/theme-product": "^1.0.0"
+    "@shopify/theme-product": "^4.1.0"
   },
   "devDependencies": {
     "rollup": "^0.62.0",
